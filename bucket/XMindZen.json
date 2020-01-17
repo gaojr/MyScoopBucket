@@ -1,11 +1,11 @@
 {
     "homepage": "https://www.xmind.net/zen/",
-    "version": "9.3.1",
+    "version": "10.0.1",
     "license": "shareware",
     "architecture": {
         "64bit": {
-            "url": "https://dl2.xmind.cn/XMind-ZEN-Update-2019-for-Windows-64bit-9.3.1-201909210110.exe#/dl.7z",
-            "hash": "13a5c354cffb7e128ac995c77551b069ddf60c33bef7f7540c338feb8859b758",
+            "url": "https://dl2.xmind.cn/XMind-ZEN-for-Windows-64bit-10.0.1-202001022330.exe#/dl.7z",
+            "hash": "298d2e0eddc3fbb897ac134d6a2d70274a821d490dc7e4b84cd560a63de429ce",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
@@ -14,8 +14,8 @@
             }
         },
         "32bit": {
-            "url": "https://dl2.xmind.cn/XMind-ZEN-Update-2019-for-Windows-32bit-9.3.1-201909210133.exe#/dl.7z",
-            "hash": "8f526628b9431ff45f59b52643e89ced8a81da24d7f01fa6b5a0a2c31ae3579e",
+            "url": "https://dl2.xmind.cn/XMind-ZEN-for-Windows-32bit-10.0.1-202001060032.exe#/dl.7z",
+            "hash": "6f78907f40dbfbc9c43f87d37bb808be56ea02a249a1f0a064cf3848bd4191dd",
             "installer": {
                 "script": [
                     "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\" -Removal",
@@ -33,15 +33,15 @@
     ],
     "checkver": {
         "url": "https://www.xmind.net/download/zen",
-        "regex": "<a href=//www\\.xmind\\.net/xmind/downloads/XMind-ZEN-Update-\\d{4}-for-Windows-32bit-[\\d.]+-(?<date32>\\d{12})\\.exe>Windows \\(32Bit\\)</a>[\\w\\W]*<a href=//www\\.xmind\\.net/xmind/downloads/XMind-ZEN-Update-(?<year>\\d{4})-for-Windows-64bit-([\\d.]+)-(?<date64>\\d{12})\\.exe>Windows \\(64Bit\\)</a>"
+        "regex": "<a href=//www\\.xmind\\.net/xmind/downloads/XMind-ZEN-for-Windows-32bit-[\\d.]+-(?<date32>\\d{12})\\.exe>Windows \\(32bit\\)</a>[\\w\\W]*<a href=//www\\.xmind\\.net/xmind/downloads/XMind-ZEN-for-Windows-64bit-([\\d.]+)-(?<date64>\\d{12})\\.exe>Windows \\(64bit\\)</a>"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dl2.xmind.cn/XMind-ZEN-Update-$matchYear-for-Windows-64bit-$version-$matchDate64.exe#/dl.7z"
+                "url": "https://dl2.xmind.cn/XMind-ZEN-for-Windows-64bit-$version-$matchDate64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://dl2.xmind.cn/XMind-ZEN-Update-$matchYear-for-Windows-32bit-$version-$matchDate32.exe#/dl.7z"
+                "url": "https://dl2.xmind.cn/XMind-ZEN-for-Windows-32bit-$version-$matchDate32.exe#/dl.7z"
             }
         }
     }
