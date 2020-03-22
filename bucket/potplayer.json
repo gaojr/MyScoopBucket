@@ -1,5 +1,5 @@
 {
-    "version": "191211",
+    "version": "200317",
     "description": "Highly customizable media player",
     "homepage": "https://potplayer.daum.net",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/20191211/PotPlayerSetup64.exe#/dl.7z",
-            "hash": "8a58ce2af3183a5d10781b5677e162e5419465511913766e6acfbbad751c7961",
+            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/200317/PotPlayerSetup64.exe#/dl.7z",
+            "hash": "6b578e65262a4bfd2450714ff6a45749d388dbf59a5cbbc40ad8c16b8eb9cdf8",
             "shortcuts": [
                 [
                     "PotPlayer64.exe",
@@ -22,8 +22,8 @@
             ]
         },
         "32bit": {
-            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/20191211/PotPlayerSetup.exe#/dl.7z",
-            "hash": "3aa2b0a185acbe8541f52cd2cb65d1ae3b2a1aefe23f75dad94a15f27a131200",
+            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/200317/PotPlayerSetup.exe#/dl.7z",
+            "hash": "3e8406f209785d53698710793365214b0ca17852c9788f4dd78b0e9bdb72491b",
             "shortcuts": [
                 [
                     "PotPlayer.exe",
@@ -72,10 +72,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/20$version/PotPlayerSetup64.exe#/dl.7z"
+                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$version/PotPlayerSetup64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/20$version/PotPlayerSetup.exe#/dl.7z"
+                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$version/PotPlayerSetup.exe#/dl.7z"
             }
         }
     }
