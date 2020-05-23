@@ -1,9 +1,9 @@
 {
-    "homepage": "https://www.paratype.com/collections/pt/44157",
-    "description": "PT Public Pack",
-    "license": "OFL",
-    "version": "1.003",
-    "url": "https://www.paratype.com/api/editions/ofl/download/59385",
-    "extract_dir": "PT-Public-Pack",
-    "notes": "Please install fonts in $dir manually"
+  "homepage": "https://www.paratype.com/collections/pt/44157",
+  "description": "PT Public Pack",
+  "license": "OFL",
+  "version": "1.003",
+  "url": "https://www.paratype.com/api/editions/ofl/download/59385",
+  "extract_dir": "PT-Public-Pack",
+  "notes": "Please install fonts in $dir manually"
 }
