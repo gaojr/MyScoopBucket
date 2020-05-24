@@ -14,7 +14,7 @@
   "installer": {
     "file": "QTTabBar.exe",
     "args": "/qi",
-    "keep": "true"
+    "keep": true
   },
   "post_install": ["Start-Process -Wait \"$($dir)\\UpdateQTTabBar1040.exe\"", "Stop-Process -Name explorer"],
   "uninstaller": {
