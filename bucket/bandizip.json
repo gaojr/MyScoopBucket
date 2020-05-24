@@ -3,17 +3,13 @@
   "description": "Yet another typical ZIP archiver.",
   "license": {
     "identifier": "Freeware",
-    "url": "https://en.bandisoft.com/bandizip/eula/"
+    "url": "https://en.bandisoft.com/bandizip/eula/eula.6.x.en.pdf"
   },
-  "version": "6.26",
+  "version": "6.27",
   "architecture": {
     "64bit": {
-      "url": "https://dl.bandisoft.com/bandizip/BANDIZIP-PORTABLE-GL-64BIT.ZIP",
-      "hash": "199407d999ca869b4febbad3194466308c525de3a568d92529ebcfbe602e10db"
-    },
-    "32bit": {
-      "url": "https://dl.bandisoft.com/bandizip/BANDIZIP-PORTABLE-GL-32BIT.ZIP",
-      "hash": "4ebca9171df246747e95ac7dde96ff7455d99d7b0110d8847f478eabc6b514ad"
+      "url": "https://ca-dl.bandisoft.com/bandizip.old/BANDIZIP6-PORTABLE.ZIP?2",
+      "hash": "4D871837DCDA579B6F8807783438C4EC0244EF0A6A37A45CF6C02CB2E17CF24B"
     }
   },
   "persist": "Bandizip.ini",
@@ -22,19 +18,5 @@
     "If(!(Test-Path \"$dir\\Bandizip.ini\")) { Set-Content \"$dir\\Bandizip.ini\" -Value $null }"
   ],
   "bin": "Bandizip.exe",
-  "shortcuts": [["Bandizip.exe", "Bandizip"]],
-  "checkver": {
-    "url": "https://en.bandisoft.com/bandizip/history/",
-    "re": "<font[^>]+>v([\\d.]+)<"
-  },
-  "autoupdate": {
-    "architecture": {
-      "64bit": {
-        "url": "https://dl.bandisoft.com/bandizip/BANDIZIP-PORTABLE-GL-64BIT.ZIP"
-      },
-      "32bit": {
-        "url": "https://dl.bandisoft.com/bandizip/BANDIZIP-PORTABLE-GL-32BIT.ZIP"
-      }
-    }
-  }
+  "shortcuts": [["Bandizip.exe", "Bandizip"]]
 }
