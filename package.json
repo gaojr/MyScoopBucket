@@ -14,7 +14,7 @@
     "cleancache": "powershell -noprofile ./bin/clean_outdated_cache.ps1",
     "checkver": "powershell -noprofile ./bin/checkver.ps1",
     "checkurls": "powershell -noprofile ./bin/checkurls.ps1",
-    "format": "prettier --write \"**/*.{ts,js,json,md}\""
+    "format": "prettier --write \"**/*.{json,md}\""
   },
   "devDependencies": {
     "eslint": "^7.1.0",
