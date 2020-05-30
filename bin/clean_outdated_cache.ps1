@@ -1,4 +1,6 @@
-Set-Location D:\scoop\cache;
+$prefix = scoop prefix scoop;
+$cache = $prefix.Replace("\apps\scoop\current","\cache");
+Set-Location $cache;
 $name1 = $null;
 $version1 = $null;
 Get-ChildItem -Name | Sort-Object -Descending | ForEach-Object {
