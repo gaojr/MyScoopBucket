@@ -5,11 +5,11 @@
     "identifier": "Freeware",
     "url": "https://en.bandisoft.com/bandizip/eula/eula.6.x.en.pdf"
   },
-  "version": "6.27",
+  "version": "6.29",
   "architecture": {
     "64bit": {
       "url": "https://ca-dl.bandisoft.com/bandizip.old/BANDIZIP6-PORTABLE.ZIP?2#/dl.zip",
-      "hash": "4D871837DCDA579B6F8807783438C4EC0244EF0A6A37A45CF6C02CB2E17CF24B"
+      "hash": "FB3F9DB5E0A93AECA35F975CB54893BBC46EECEDECF4D9B1088DBB1C378569B1"
     }
   },
   "persist": "Bandizip.ini",
