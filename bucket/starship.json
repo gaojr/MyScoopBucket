@@ -1,5 +1,5 @@
 {
-  "version": "0.50.0",
+  "version": "0.55.0",
   "description": "The minimal, blazing fast, and extremely customizable prompt for any shell!",
   "homepage": "https://starship.rs",
   "license": "ISC",
@@ -12,8 +12,8 @@
   },
   "architecture": {
     "64bit": {
-      "url": "https://github.com/starship/starship/releases/download/v0.50.0/starship-x86_64-pc-windows-msvc.zip",
-      "hash": "B8AFDE26E124C2EE5FDA070295F38B8BEC51BDF0F470EAD083E70D7BD885893B"
+      "url": "https://github.com/starship/starship/releases/download/v0.55.0/starship-x86_64-pc-windows-msvc.zip",
+      "hash": "3A19E02840458E2184A6FC22A6E02A2071CFFFB1E97A50E4DB8893A7F914331D"
     }
   },
   "bin": "starship.exe",
