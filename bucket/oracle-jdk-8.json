@@ -2,11 +2,15 @@
   "homepage": "https://www.oracle.com/technetwork/java/javase/overview/index.html",
   "description": "Oracle JDK 8",
   "license": "https://java.com/otnlicense",
-  "version": "8u241",
+  "version": "8u321",
   "architecture": {
     "64bit": {
-      "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/jdk-8u241-windows-x64.exe#/dl.7z",
-      "hash": "63e768fb297f50210b00b34bb362e80ca98384cb275c019acdb49f646d8a1549"
+      "url": "https://download.macromedia.com/pub/coldfusion/java/java8/8u321/jdk/jdk-8u321-windows-x64.exe#/dl.7z",
+      "hash": "fb2edfe76e32052285de4a5114989e8eca9f8829b1df197da66cfa53658e1b72"
+    },
+    "32bit": {
+      "url": "https://download.macromedia.com/pub/coldfusion/java/java8/8u321/jdk/jdk-8u321-windows-i586.exe#/dl.7z",
+      "hash": "76d5a020ad0db372ede1ea9fee0770bc436aec44f3a5956e72d17fd485d1de38"
     }
   },
   "extract_to": "tmp",
@@ -36,18 +40,21 @@
     "JAVA_HOME": "$dir"
   },
   "checkver": {
-    "url": "https://www.oracle.com/technetwork/java/javase/downloads/index.html",
-    "re": "Java SE (8u\\d+[^ ]+)"
+    "url": "https://www.adobe.com/support/coldfusion/downloads.html",
+    "regex": "JAVA SE (8u\\d+[^<]*)"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://master.dl.sourceforge.net/project/tomato-extra/apps/jdk-$version-windows-x64.exe#/dl.7z"
+        "url": "https://download.macromedia.com/pub/coldfusion/java/java8/$version/jdk/jdk-$version-windows-x64.exe#/dl.7z"
+      },
+      "32bit": {
+        "url": "https://download.macromedia.com/pub/coldfusion/java/java8/$version/jdk/jdk-$version-windows-i586.exe#/dl.7z"
       }
     },
     "hash": {
-      "url": "https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html",
-      "find": "$basename.*([a-fA-F0-9]{64})\"};"
+      "url": "https://download.macromedia.com/pub/coldfusion/java/java8/$version/jdk/jdk$version-checksum.txt",
+      "find": "$basename.*([a-fA-F0-9]{64})"
     }
   }
 }
